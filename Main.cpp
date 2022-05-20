@@ -9,6 +9,9 @@
 #include "Adminstrator"
 #include "Course Coordinator"
 #include "Subject"
+#include "Lecturer.h"
+#include "CreditCard.h"
+#include "DebitCard.h"
 
 using namespace std;
 
@@ -92,6 +95,31 @@ int main(){
   delete admin1;
   delete CCoordinator1;
   delete sub1;
+	
+	
+  Lecturer *lec1;
+  lec1 = new Lecturer("LC12345678");	
+  lec1-> AddStudentDetails();
+  lec1->setFirstName("Sam");
+  lec1->setLastName("Perera");
+
+
+  Credit_Card *Ccard1;
+  Ccard1 = new Credit_card();	
+  Ccard1->setCardNumber(42364569985278);
+  Ccard1->setCardType("Visa");
+
+
+  Debit_Card *Dcard1;
+  Dcard1 = new Debit_Card();
+  Dcard1->setCardName("A R Wickramasingha");
+  Dcard1->setsecurityCode(879);
+
+
+  delete lec1;
+  delete Ccard1;
+  delete Dcard1;
+	
 	
   return 0;
 }
