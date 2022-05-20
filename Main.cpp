@@ -1,4 +1,5 @@
 #include<iostream>
+#include<cstring>
 #include "UnregisteredUser.h"
 #include "PayPal.h"
 #include "RegisteredUser.h"
@@ -16,6 +17,7 @@
 using namespace std;
 
 int main(){
+	
   Unregistered_User *UnUser1;	
   UnUser1 = new Unregistered_User();
   UnUser1->setFirstName("Ann");
